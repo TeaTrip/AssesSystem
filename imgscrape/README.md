@@ -1,6 +1,6 @@
-# DistributedCV - Image Scraper
+# IAD - Image Scraper
 
-An example [Scrapy](http://scrapy.org/) [ImagePipeline](http://doc.scrapy.org/en/latest/topics/media-pipeline.html#using-the-images-pipeline) implementation. Recursively visits all valid links on a page, downloading all images to `imgscrape/output`.
+Web crawler based on [Scrapy](http://scrapy.org/) [ImagePipeline](http://doc.scrapy.org/en/latest/topics/media-pipeline.html#using-the-images-pipeline) implementation. Google each label from dataset, downloading all images form page to MongoDB, 'asses' DB, 'images' table.
 
 ## Install dependencies
 ```bash
@@ -9,6 +9,6 @@ pip install scrapy validators
 
 ## Usage
 ```
-cd scraper
-scrapy crawl img
+python collect.py
+
 ```
