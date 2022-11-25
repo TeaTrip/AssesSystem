@@ -13,7 +13,7 @@ class ImgSpider(CrawlSpider):
         self.start_urls = [f'https://www.google.com/search?q={category}&sxsrf=ALiCzsaiRLvxUO0O7q_fr57KJgB6sAfLNw:1667127131970&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKi_zD5If7AhWWDRAIHX6nCh4Q_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1']  # py36
         super().__init__(**kwargs)  # python3
 
-    rules = (Rule(LinkExtractor(allow=(), deny=deny), callback='item_callback', process_links='link_callback', follow=False),)
+    rules = (Rule(LinkExtractor(allow=()), callback='item_callback', process_links='link_callback', follow=False),)
 
     def link_callback(self, links):
         return links

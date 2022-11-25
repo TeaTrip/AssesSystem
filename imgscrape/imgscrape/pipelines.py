@@ -181,7 +181,7 @@ class ImgscrapePipeline(FilesPipeline):
 
 class Mongo:
 
-    collection_name = 'capybaras_row'
+    collection_name = 'images'
 
     def __init__(self):
         self.client = MongoClient()
