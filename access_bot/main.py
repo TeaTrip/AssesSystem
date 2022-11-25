@@ -1,8 +1,3 @@
-from operator import truediv
-from random import shuffle
-from unittest import case
-from requests import session
-from soupsieve import match
 import telebot
 from pymongo import MongoClient
 from PIL import Image
@@ -15,7 +10,7 @@ tb = telebot.TeleBot('5741190584:AAGb78QKF2izX89S4Nz4aPJ1RD-m2vN4Urs')
 client = MongoClient()
 db = client.asses
 users = db['users']
-capy = db['capybaras_row']
+capy = db['images']
 sessions = db['sessions']
 
 numbers = [
